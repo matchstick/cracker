@@ -9,7 +9,10 @@ $(PROGS): crack.c
 clean:
 	rm -r -f $(PROGS) $(PROGS).dSYM/
 
-decrypt:
+msg:
 	./$(PROGS) -d data/binary_msg.bin
+
+response:
+	./$(PROGS) -d data/binary_response.bin
 
 all: $(PROGS)
